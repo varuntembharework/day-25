@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — [Varun Tembhare]</title>
+  <!-- Intentionally structure-only: add CSS and scripts later -->
+</head>
+<body>
+  <!-- Site wrapper -->
+  <div id="site">
+
+    <!-- Header / Navigation -->
+    <header id="header" role="banner">
+      <div class="container">
+        <h1 class="site-title">[Varun Tembhare]</h1>
+        <nav id="main-nav" role="navigation" aria-label="Main">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero / Intro -->
+    <section id="hero" role="region" aria-labelledby="hero-heading">
+      <div class="container">
+        <h2 id="hero-heading">Hi — I'm Varun</h2>
+        <p class="hero-subtitle">A short one-line description: e.g. Frontend developer, problem solver, lifelong learner.</p>
+        <!-- Call to actions -->
+        <p class="cta">
+          <a href="#projects">See my work</a>
+          <a href="#contact">Contact me</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" role="region" aria-labelledby="about-heading">
+      <div class="container">
+        <h3 id="about-heading">About</h3>
+        <p><!-- Short bio / current focus / what you build --></p>
+        <ul>
+          <li><strong>Location:</strong> Nagpur, India</li>
+          <li><strong>Currently:</strong> Learning in High School</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" role="region" aria-labelledby="projects-heading">
+      <div class="container">
+        <h3 id="projects-heading">Projects</h3>
+
+        <!-- Project list (repeat this article for each project) -->
+        <article class="project" id="project-1">
+          <h4 class="project-title">Project Title 1</h4>
+          <p class="project-description"><!-- short description --></p>
+          <ul class="project-meta">
+            <li>Tech: HTML · CSS · JavaScript</li>
+            <li><a href="#">Live demo</a></li>
+            <li><a href="#">Source</a></li>
+          </ul>
+        </article>
+
+        <article class="project" id="project-2">
+          <h4 class="project-title">Project Title 2</h4>
+          <p class="project-description"><!-- short description --></p>
+          <ul class="project-meta">
+            <li>Tech: C++ (if applicable)</li>
+            <li><a href="#">Live demo</a></li>
+            <li><a href="#">Source</a></li>
+          </ul>
+        </article>
+
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <!-- Skills / Tools -->
+    <section id="skills" role="region" aria-labelledby="skills-heading">
+      <div class="container">
+        <h3 id="skills-heading">Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git · GitHub</li>
+          <li>Other tools / frameworks</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" role="region" aria-labelledby="contact-heading">
+      <div class="container">
+        <h3 id="contact-heading">Contact</h3>
+        <p>Want to collaborate or say hi? Reach out:</p>
+        <address>
+          <p>Email: <a href="mailto:varuntembhare.work@gmail.com">varuntembhare.work@gmail.com</a></p>
+          <p>LinkedIn: <a href="www.linkedin.com/in/varun-tembhare-5a010937b" rel="noopener">Your LinkedIn</a></p>
+        </address>
+
+        <!-- Minimal contact form (structure only) -->
+        <form id="contact-form" action="#" method="post" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" role="contentinfo">
+      <div class="container">
+        <p>&copy; <span id="year"></span> [Your Name]. Built with ❤️.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Small inline script for year (optional) -->
+  <script>
+    // Structure-only small helper (safe to keep)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
